@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"node></script>
+    <title>HEROKO CHATAPP</title>
+<marquee>HEY GUYS WELCOME TO SANKET"S CHATAPP !!!<BR> YOU CAN CHAT ANYTIME ,ANYWHERE...NO SCaling Issue...Its flexible and robust...Happy Chatting</WELCOME></marquee>
+
+    <style>
+            body  {
+              background-image: url("https://gorodenkoff.com/wp-content/uploads/2018/08/cyber-security-video-background-by-kitreel.jpg");
+              background-color: #cccccc;
+              transition: 1000ms;
+              background-size: cover;
+            }
+            marquee
+            {
+              color: yellow;
+              text-align : center;
+            }
+
+            h1{
+                background-color:cyan;
+            }
+
+            
+            
+            </style>
+  </head>
+
+
+  
+  <body>
+    <h1>HI SANKET! </h1>
+            <div class  = "container">
+                    <img src="data:image/jpeg;base64,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">
+                <br>
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-WS4xhrtvpgxMxsMtbII4n5t8uDepIFOr35DR4jXKhordEa_LA" class="img-rounded" alt="Cinque Terre">
+                <div class ="jumbotron">
+                    <h1 class = "display-4">SKNCHAT</h1>
+                        <br>
+                        
+                        <input id ="name" class ="form-control" placeholder ="Name">
+                        <br>
+                        <textarea id ="message" class ="form-control" placeholder ="message"></textarea>
+                        <br>
+                        <button id = "send" class ="btn btn-success">Send</button>
+                    </div>
+                    <div id ="messages">
+
+                    </div>
+
+
+                    
+            </div>   
+            <script>
+                var socket = io()
+                $(()=>  {
+                  $("#send").click(() =>{
+                  var message = {name: $("#name").val(),message: $("#message").val()}
+                  postMessage(message)
+               })
+                getMessages()
+              })
+            socket.on('message', addMessage)
+
+                function addMessage(message){
+                    $("#messages").append(`<h4> ${message.name}</h4> <p>${message.message}</p>`)
+                }
+
+            function getMessages() {
+              $.get('https://gentle-spire-95426.herokuapp.com/messages', (data) => {
+                data.forEach(addMessage);         
+              
+              })
+            }
+
+            function postMessage(message) {
+              $.post(' https://gentle-spire-95426.herokuapp.com/messages', message)
+            }
+            </script>
+
+    
+  </body>
+</html>
+  
